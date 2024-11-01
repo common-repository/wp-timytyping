@@ -1,0 +1,72 @@
+Author: Timy Dang
+Version: 1.0
+Tag: Post, Comments, Posts, wordpress, pages
+Tested: 2.3.1
+Creation Time: 16.12.2007
+
+Author URI: http://blog.nanowings.de/
+Plugin Name: WP TIMY TYPING
+Plugin URI: http://blog.nanowings.de/category/timytyping/
+Description: Used to typing vietnamese on the page. WP TIMY TYPING v1.0. (USE ONLY FOR VIETNAMESE)
+
+
+
+This plugin uses code from Hieu Tran Dang (http://avim.veneroida.com/?page_id=5 )
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+
+
+
+
+What is WP-Timytyping? WP-Timytyping đơn giản là giải pháp sử dụng viết tiếng Việt cho những ai yêu thích Wordpress.
+
+Plugin Name: WP-Timytyping
+Description: Plugin hỗ trợ viết tiếng Việt cho Wordpress
+Version: 1.0
+Author: Timy Dang
+Tested: Thử chạy tốt trên WP 2.3.1
+Sử dụng Avim Version: avim20071006.js
+
+HƯỚNG DẪN CÀI ĐẶT:
+1. Download wp-timytyping.rar
+2. Giải nén file và upload thư mục timy-typing với tất cả các files trong đó lên /wp-content/plugin/
+3. Hãy mở file footer.php bằng text editor bạn thích, file đó nằm trong trong /wp-content/themes/default 
+(default là theme mặc định của WP) (hoặc mở file đó trong theme của bạn), 
+sau đó copy toàn bộ nội dung ở dưới đây,chèn vào sau dòng <div id="footer">
+
+<!--Copy phần này vào footer.php-->
+<p>
+		<?php
+		echo ".:: Timytyping Tool ::.";
+		echo "			<INPUT id=him_auto onclick=setMethod(0); type=radio name=viet_method>AUTO \n";
+		echo "      <INPUT id=him_telex onclick=setMethod(1); type=radio name=viet_method>TELEX \n";
+		echo "      <INPUT id=him_vni onclick=setMethod(2); type=radio name=viet_method>VNI \n";
+		echo "      <INPUT id=him_viqr onclick=setMethod(3); type=radio name=viet_method>VIQR \n";
+		echo "      <INPUT id=him_viqr2 onclick=setMethod(4); type=radio name=viet_method>VIQR* \n";
+		echo "      <INPUT id=him_off onclick=setMethod(-1); type=radio name=viet_method>OFF\n";
+		echo "      <INPUT id=him_ckspell onclick=setSpell(this); type=checkbox name=viet_method>Check Spell \n";
+		echo "			<INPUT id=him_daucu onclick=setDauCu(this); type=checkbox name=viet_method>Old Accent \n";
+		?>
+</p>
+<!--End copy phần này vào footer.php-->
+
+
+4. Truy cập vào Dashboard, chọn thẻ Plugin, tìm tới dòng WP TIMY TYPING và kích hoạt.
+
+That's it!
+
+DEMO: 
+
+Xem footer trang http://blog.nanowings.de
+
+DOWNLOAD PLUGIN: 
+
+http://blog.nanowings.de/category/timytyping/
